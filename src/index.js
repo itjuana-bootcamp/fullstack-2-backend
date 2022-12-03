@@ -22,7 +22,9 @@ const connectDb = () => {
   console.log("Database connected");
 };
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server is running in port ${port}`);
   connectDb();
 });
+
+module.exports = { app, server };
