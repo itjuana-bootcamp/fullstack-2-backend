@@ -5,7 +5,7 @@ const saveOrder = async (req, res) => {
 
   const savedOrder = await OrderService.saveOrder(order);
 
-  res.status(201).json(savedOrder);
+  res.status(200).json(savedOrder);
 };
 
 module.exports = {
