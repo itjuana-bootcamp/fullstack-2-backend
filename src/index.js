@@ -7,7 +7,7 @@ const productsRotuer = require("./routes/products");
 const ordersRouter = require("./routes/orders");
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors());
